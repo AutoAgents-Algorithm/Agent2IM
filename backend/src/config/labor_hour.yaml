@@ -32,7 +32,7 @@ schedules:
     - id: "labor_evening_check"
       name: "工时检查 - 周一至周五19:30"
       type: "labor_hour"
-      enabled: true
+      enabled: false
       schedule: "cron"
       cron: "30 19 * * 0-4"  # 周一到周五（APScheduler: 0=Mon, 4=Fri）
       offset: 0  # 0=今天
@@ -42,7 +42,7 @@ schedules:
     - id: "labor_morning_makeup"
       name: "工时检查 - 周二至周五10:30补填提醒"
       type: "labor_hour"
-      enabled: true
+      enabled: false
       schedule: "cron"
       cron: "30 10 * * 1-4"  # 周二到周五（APScheduler: 1=Tue, 4=Fri）
       offset: -1  # -1=昨天
@@ -52,7 +52,7 @@ schedules:
     - id: "labor_month_summary"
       name: "工时月报 - 每月28号"
       type: "labor_month_summary"
-      enabled: true
+      enabled: false
       schedule: "cron"
       cron: "0 10 28 * *"
       mention_users:
@@ -63,7 +63,7 @@ schedules:
     - id: "labor_monday_friday_check"
       name: "工时检查 - 周一10:30检查周五"
       type: "labor_hour"
-      enabled: true
+      enabled: false
       schedule: "cron"
       cron: "30 10 * * 0"  # 周一（APScheduler: 0=Monday）
       offset: -3  # -3=上周五（从周一往前推3天）

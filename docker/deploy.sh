@@ -17,7 +17,7 @@ NC='\033[0m'
 # ==================== 配置 ====================
 SERVER_IP="${AGENT2IM_SERVER:-45.78.224.30}"
 SERVER_USER="${AGENT2IM_USER:-root}"
-SERVER_PORT="${AGENT2IM_PORT:-22}"
+SERVER_PORT="${AGENT2IM_PORT:-10022}"
 SERVER_PASS="${AGENT2IM_PASS:-autoagents@2023}"
 REMOTE_DIR="${AGENT2IM_REMOTE_DIR:-/root/frank/Agent2IM}"
 CONTAINER_NAME="agent2im-app"
